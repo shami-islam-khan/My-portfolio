@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Oswald&family=Silkscreen&display=swap');
+:root{
+    --main-bg-color: rgb(40, 116, 240)
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    /* border: 2px solid red; */
+    background: var(--main-bg-color);
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+}
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a {
+    color: rgb(165, 206, 243);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(246, 249, 252);
+    /* text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive; */
+    /* font-family: 'Silkscreen', cursive; */
+
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-weight: bold; */
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: aliceblue;
+    font-family: 'Cutive Mono', monospace;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+.search button{
+    font-weight: bold;
+    font-family: 'Cutive Mono', monospace;
+}
+.slider{
+    width: 80vw;
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card{
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Cutive Mono';
+    /* overflow: hidden; */
+    
+}
+.cards{
+    display: flex;
+    overflow: hidden;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card h2{
+    font-family: monospace;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+.my-1{
+    margin: 5px;
+}
+.my-2{
+    margin: 26px 0;
+}
+.text-center{
+    text-align: center;
+}

@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.btn-back {
+    position: fixed;
+}
+
+button {
+    margin-left: 20px;
+    margin-top: 20px;
+    min-width: 50px;
+    width: 4%;
+    padding: .5%;
+    border-radius: 8px;
+    font-size: 5vh;
+    background: none;
+    color: #ff004f;
+    cursor: pointer;
+    border: black;
+}
+
+button i {
+    color: #ff004f;
+}
+
+button i:hover {
+    color: #b54769;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    grid-gap: 40px; /* Spacing between items */
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.services-list div {
+    background: #262626;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    width: 300px; /* Fixed width for square */
+    height: 300px; /* Fixed height for square */
+    border: 5px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 200px; /* Adjust image height */
+    object-fit: cover;
+}
+
+.services-list div i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.services-list div h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* Footer */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #ffffff94;
+}
+
+.copyright i {
+    color: #ff0051a6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr; /* Stacks items on smaller screens */
+    }
+
+    .services-list div {
+        width: 100%; /* Full width for mobile view */
+        height: auto; /* Let height adjust */
+    }
+
+    img {
+        height: auto; /* Adjust image height for mobile */
+    }
+}

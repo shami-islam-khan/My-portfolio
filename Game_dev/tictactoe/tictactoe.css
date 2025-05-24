@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff8dc;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #b4a51e;
+    font-size: 2.5em;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #f4a460;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d2691e;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 105px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #faebd7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 3.5px solid #b4a51e;
+}
+
+#reset-game {
+    background-color: #ffdead;
+    margin-top: 20px;
+}
+
+#winner {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #b4a51e;
+}
+
+#congrats {
+    display: none;
+}

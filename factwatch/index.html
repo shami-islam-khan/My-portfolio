@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfd0900823.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/67fdaab8be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/facetWatch_logo.png" width="180" class="logo" >
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right"> 
+            <!-- search box andother tools -->
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+
+<!------------ settings-menu ----------------->
+        <div class="settings-menu">
+
+            <div id="dark-button">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" >
+                    <div>
+                        <p>Jamal Bhuyan</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" >
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-link">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Setting & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </nav>
+    <div class="container">
+        <!---------- left-sidebar ----------->
+    <div class="left-sidebar">
+        <div class="imp-links">
+            <a href="#"><img src="images/news.png">&nbsp Latest News</a>
+            <a href="#"><img src="images/friends.png">&nbsp Friends</a>
+            <a href="#"><img src="images/group.png">&nbsp Group</a>
+            <a href="#"><img src="images/marketplace.png">&nbsp marketplace</a>
+            <a href="#"><img src="images/watch.png">&nbsp watch</a>
+            <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+            <a href="#"><img src="images/shortcut-2.png">App Developers</a>
+            <a href="#"><img src="images/shortcut-3.png">Full Stack Developers</a>
+            <a href="#"><img src="images/shortcut-4.png">Experts</a>
+        </div>
+    </div>
+        <!------------ main-content ------------->
+        <div class="main-content">
+
+
+            <div class="story-gallary">
+
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Mili Akter</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Jamal Bhuyan</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Rupna Chakma</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Mohamed Sohel</p>
+                </div>
+
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" >
+                    <div>
+                        <p>Jamal Bhuyan</p>
+                        <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Jamal?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Activity</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+<!------------ post-container  1 -------------->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Jamal Bhuyan</p>
+                            <span>December 04 2021, 13:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorem <span>@Dolor SIT</span>  amet consectetur adipisicing elit. Nobis suscipit cum error quos libero modi, voluptates, ducimus vitae dolorem recusandae exercitationem minus fuga sed ab doloribus expedita quibusdam pariatur. Fuga exercitationem sit ratione minima consequuntur? <a href="#">#Shami</a> <a href="#">#Bangladesh</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" >120</div>
+                        <div><img src="images/comments.png" >45</div>
+                        <div><img src="images/share.png" >20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+<!------------- post-container 2 ------------------>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Jamal Bhuyan</p>
+                            <span>December 04 2021, 13:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorrram <span>@Ipsum</span> dolor sit amet consectetur adipisicing elit. Animi quam eligendi tenetur iste, vero eum at enim molestias incidunt, deleniti aliquam corporis dolor quidem itaque, officia repellendus adipisci. <a href="#">#khan</a> <a href="#">#BD</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >87</div>
+                        <div><img src="images/comments.png" >16</div>
+                        <div><img src="images/share.png" >7</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+
+ <!----------------- post-container 3  ------------->
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Jamal Bhuyan</p>
+                            <span>December 04 2021, 13:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorrram <span>@Ipsum</span> dolor sit amet consectetur adipisicing elit. Animi quam eligendi tenetur iste, vero eum at enim molestias incidunt, deleniti aliquam corporis dolor quidem itaque, officia repellendus adipisci. <a href="#">#khan</a> <a href="#">#BD</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >87</div>
+                        <div><img src="images/comments.png" >16</div>
+                        <div><img src="images/share.png" >7</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+<!------------------- post-container 4 --------------->
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Jamal Bhuyan</p>
+                            <span>December 04 2021, 13:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorrram <span>@Ipsum</span> dolor sit amet consectetur adipisicing elit. Animi quam eligendi tenetur iste, vero eum at enim molestias incidunt, deleniti aliquam corporis dolor quidem itaque, officia repellendus adipisci. <a href="#">#khan</a> <a href="#">#BD</a></p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >87</div>
+                        <div><img src="images/comments.png" >16</div>
+                        <div><img src="images/share.png" >7</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+<!---------------- post-container 5 -------------->
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Jamal Bhuyan</p>
+                            <span>December 04 2021, 13:30</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Lorrram <span>@Ipsum</span> dolor sit amet consectetur adipisicing elit. Animi quam eligendi tenetur iste, vero eum at enim molestias incidunt, deleniti aliquam corporis dolor quidem itaque, officia repellendus adipisci. <a href="#">#khan</a> <a href="#">#BD</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" >87</div>
+                        <div><img src="images/comments.png" >16</div>
+                        <div><img src="images/share.png" >7</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        <button type="button" class="load-more-button">Load More</button>
+        </div>
+        <!---------- right-sidebar ------------------>
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See all</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>04</h3>
+                    <span>December</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp Mirpur Dhaka</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>20</h3>
+                    <span>January</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp Mirpur Dhaka</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class ="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="Online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Mili Akter</p>
+
+            </div>
+            <div class="Online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Jamal Bhuyan</p>
+
+            </div>
+            <div class="Online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Rupna Chakma</p>
+
+            </div>
+
+
+        </div>
+    </div>
+<div class="footer">
+    <p>Copyright 2022 - Shami Islam Khan</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
